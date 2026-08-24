@@ -60,9 +60,9 @@
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <button type="button" class="icon" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="myTopnav">
+                <span class="material-symbols-outlined" id="menuIcon">menu</span>
+            </button>
         </header>
 
         <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -236,14 +236,16 @@
 
     <script src="js/masonry-grid-script.js"></script>
 
+    <!-- JavaScript for the MOBILE NAV MENU -->
     <script>
         function toggleMenu() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
+            const nav = document.getElementById("myTopnav");
+            const icon = document.getElementById("menuIcon");
+            const btn = document.getElementById("menuToggle");
+
+            const isOpen = nav.classList.toggle("responsive");
+            icon.textContent = isOpen ? "close" : "menu";
+            btn.setAttribute("aria-expanded", isOpen);
         }
     </script>
 
