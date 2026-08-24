@@ -74,23 +74,26 @@ header h1 {
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-    
+  
     004.  NAVIGATION MENU
+  
+    = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
-    Responsive menu adapted from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-    
-= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
+header {
+    position: relative; /* anchors .icon to the header, not the page */
+}
 
 .topnav {
-    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    gap: 0 1rem;
-    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem 2rem;
+    width: 100%;
 }
 
 .topnav a {
-    color: var(--dark-text);
+    color: #000;
     text-decoration: none;
     font-size: 1.15rem;
 }
@@ -109,18 +112,12 @@ header h1 {
     top: 1.5rem;
     right: 1rem;
     background: none;
-    background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 0;
-    color: var(--dark-text);
-    z-index: 999;
-}
-
-.icon .material-symbols-outlined {
+    color: #000;
     font-size: 2rem;
-    display: block;
 }
 
 /* First breakpoint */
@@ -148,7 +145,7 @@ header h1 {
         width: 40vw;
         margin-top: 0;
         padding: 6rem 2rem 4rem 2rem;
-        background-color: var(--slide-out-menu-background);
+        background-color: beige;
     }
 
     .topnav.responsive a {
@@ -157,7 +154,7 @@ header h1 {
     }
 }
 
-/* First breakpoint */
+/* Second breakpoint */
 @media screen and (max-width: 26rem) {
     header h1 {
         max-width: 18.75rem;
@@ -168,7 +165,6 @@ header h1 {
         padding-bottom: 0;
     }
 }
-
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
   
     005.  INTRO BANNER AT TOP OF PAGE
