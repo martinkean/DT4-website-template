@@ -86,8 +86,7 @@ header {
 .topnav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     gap: 0.5rem 2rem;
     width: 100%;
 }
@@ -250,7 +249,7 @@ header {
     }
 }
 
-/* 'portrait' is just a container for the text and images */
+/* This 'portrait' class is a container for the text and images */
 .portrait {
     text-align: center;
     background-color: var(--portrait-background);
@@ -298,7 +297,7 @@ header {
     }
 }
 
-/* 'landscape' is just a container for the text and images */
+/* This 'landscape' class is a container for the text and images */
 .landscape {
     text-align: center;
     background-color: var(--landscape-background);
@@ -363,7 +362,7 @@ header {
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 /*  Using 'grid-template-areas' you can design the layout of the containers 
-      For Desktop and Mobile device widths. This layout displays containers in 2 columns, for Desktop and Laptop. 
+      For Desktop and Mobile device widths. This layout displays containers in 2 columns, for Desktop and Laptop, and 1 column for phones. 
       A full-stop '.' means 'create a space' */
 
 @supports (display: grid) {
@@ -460,7 +459,7 @@ header {
     background-repeat: no-repeat;
 }
 
-/* This 'Next' button below is unused at the moment : ) */
+/* This 'Next' button below is unused at the moment. Where might you use this in your web page? */
 .next-button {
     background-color: var(--dark-text);
     width: 40px;
@@ -490,7 +489,8 @@ header {
     = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 /*  Here is the Contact Form arranged in two columns
-      A dot denotes a blank space, so the elements on those rows are left-aligned */
+    A dot denotes a blank space, so the elements on those rows are left-aligned */
+
 @supports (display: grid) {
     .contact-form {
         display: grid;
@@ -737,4 +737,4 @@ ul.footer__menu__list li a:hover {
     }
 }
 
-/* = = =  E N D = = = */
+/* = = =   E N D   O F   T H E   C S S  = = = */
