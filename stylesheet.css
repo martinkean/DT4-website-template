@@ -32,7 +32,6 @@
     --light-text: #fcfcfa;
     --cream-text: #f6ead0;
     --medium-dark-text: #055723;
-    --page-background: #A9D0D9;
     --main-background: #F2C230;
     --header-background: #F2E5A2;
     --intro-background: #F29F05;
@@ -63,7 +62,6 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #1d1d1b;
-    background-color: var(--page-background);
     font-size: 1.2rem;
 }
 
@@ -280,6 +278,10 @@ header {
     font-weight: 200;
     font-family: var(--typeface-open-sans);
     font-style: italic;
+}
+
+.carousel-cell {
+    width: 100%;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -740,7 +742,7 @@ ul.footer__menu__list li a:hover {
    ********************* */
 
 /* Max width 1120px or 70rem */
-@media screen and (max-width: 1120rem) {
+@media screen and (max-width: 1120px) {
     .footer-grid {
         grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
     }
