@@ -37,21 +37,21 @@ git commit -m "Describe what you changed"
 git push -u origin main
 ```
 ## 4. To work on your code on your home Laptop
- 
-##### Open VS Code on your laptop (you can download VS Code for free).
 
-First time only: 
+Open VS Code on your laptop (you can download VS Code for free).
+
+#### First time only: 
 ```bash
 git clone https://github.com/YOUR-USERNAME/your-repo-name.git
 cd your-repo-name
 ```
 
-##### Every session: pull the latest changes before starting work:
+#### Every session: pull the latest changes before starting work:
 ```bash
 git pull
 ```
 
-##### At the end of the session: push changes back up:
+#### At the end of the session: push changes back up:
 ```bash
 git add .
 git commit -m "Describe what you changed"
